@@ -1,17 +1,3 @@
-toilet = [
-    {
-    "poop": "cool",
-    "pee": "No_cool",
-    "John": [4,5,6,7],
-    },
-    {
-    "JOHN 2": ["crazy", 56],
-    "return of green liquid": 6883838.22232222,
-    "COMMUNIST REVOLUTION": "zeeireuieriur",
-    }
-]
-print(toilet[0]["John"][0])
-
 best_buy_items = [
     {
         "name": "Samsung 55\" 4K UHD TV",
@@ -37,4 +23,10 @@ def show_items(items):
     for index, item in enumerate(items):
         print(index, ":", item["name"])
 
-show_items(best_buy_items)
+
+def choose_item():
+    show_items(best_buy_items)
+    x = int(input("Which item number do you want to buy? "))
+    print(best_buy_items[x])
+
+choose_item()
