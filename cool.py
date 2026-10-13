@@ -16,7 +16,7 @@ shop = [
     },
     {
         "name": "Ethan Chen",
-        "price": 0.10,
+        "price": 0.01,
         "description": "Your sleave"
     },
     {
@@ -43,7 +43,7 @@ def choose_item():
     if x >= 5:
         x=5
     print(f"{shop[x]["name"]} has been added to the cart.")
-    cart.append(f"{shop[x]["name"]}, ${shop[x]["price"]}")
+    cart.append(f"{shop[x]["name"]} - ${shop[x]["price"]}")
     costsp.append(shop[x]["price"])
 
 def shope():
@@ -51,7 +51,7 @@ def shope():
     while True:
         choose_item()
         x = input("Do you wish to continue?")
-        if x == "no":
+        if x == "no"or x== "No":
             break
     print("---------------------------------------------")
     print("This is your cart:")
